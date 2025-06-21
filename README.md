@@ -10,7 +10,12 @@
 ## 文档翻译与校对
 - 参考 [翻译规范](https://github.com/Agda-zh/PLFA-zh/issues/1)
 - [术语表](https://docs.google.com/spreadsheets/d/1HL3E_eNF3rI6dy3k7_EpSOLo1eRkBDNIEPeyTg_Eu3s/edit?usp=sharing)
-   
+
+## 本地编译与环境安装
+**本参考手册只能在非windows环境下构建**
+1. latex, 参考[本地构建](#在本地构建参考手册)
+2. 安装  `pdftocairo`，在Debian系系统为`poppler-utils`包，在Homebrew中为`poppler`包
+3. 编译: `lake build`
 
 **以下为原文档readme内容**
 ----
