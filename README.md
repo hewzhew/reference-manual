@@ -15,7 +15,8 @@
 **本参考手册只能在非windows环境下构建**
 1. latex, 参考[本地构建](#在本地构建参考手册)
 2. 安装  `pdftocairo`，在Debian系系统为`poppler-utils`包，在Homebrew中为`poppler`包
-3. 编译: `lake build`
+3. 编译: `lake exe generate-manual --depth 2`
+生成的文档在`_out` 目录下
 
 **以下为原文档readme内容**
 ----
