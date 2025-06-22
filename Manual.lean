@@ -38,6 +38,7 @@ set_option maxRecDepth 1024
 
 #doc (Manual) "Lean 语言参考手册" =>
 %%%
+file := "The Lean Language Reference"
 tag := "lean-language-reference"
 %%%
 
@@ -78,7 +79,7 @@ This very book is written in [Verso](https://github.com/leanprover/verso), a doc
 -/
 
 Lean同时也是一种纯*函数式编程语言*，具有基于引用计数的运行时系统，能够高效处理打包数组结构、多线程和单子{ name }`IO`等特性。
-作为一门编程语言，Lean主要由自身实现，包括语言服务器、构建工具、繁释器({tech}[elaborator])和策略系统。
+作为一门编程语言，Lean主要由自身实现，包括语言服务器、构建工具、{tech key:="elaborator"}[繁释器]和策略系统。
 本手册正是用[Verso](https://github.com/leanprover/verso)编写的，Verso是用Lean开发的文档创作工具。
 
 /-
