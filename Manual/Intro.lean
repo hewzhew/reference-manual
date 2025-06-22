@@ -21,6 +21,7 @@ set_option pp.rawOnError true
 
 #doc (Manual) "简介" =>
 %%%
+file := "Introduction"
 htmlSplit := .never
 tag := "introduction"
 %%%
