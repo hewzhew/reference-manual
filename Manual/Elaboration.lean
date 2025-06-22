@@ -718,7 +718,7 @@ However, Lean is a very open, flexible system.
 To guard against the possibility of poorly-written metaprograms jumping through hoops to add unchecked values to the environment, a separate tool `lean4checker` can be used to validate that the entire environment in a `.olean` file satisfies the kernel.
 -/
 
-整个模块繁释完成、每项添加都通过内核检查后，对全局环境（含扩展）的更改被序列化为 {deftech key := "`.olean` file"}[`.olean` 文件]。
+整个模块繁释完成、每项添加都通过内核检查后，对全局环境（含扩展）的更改被序列化为 {deftech key := ".olean file"}[`.olean` 文件]。
 在这些文件中，Lean 的项与值与内存中的形式相同，因此可直接进行内存映射。
 所有添加新类型或定义到环境的代码路径，都需先经过内核检查。
 由于 Lean 是一个高度打开灵活的系统，为防止恶写元程序绕过检查往环境加入未验值，可使用独立工具 `lean4checker` 验证 `.olean` 文件内环境是否通过内核检验。
