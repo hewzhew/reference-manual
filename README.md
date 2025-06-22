@@ -11,11 +11,20 @@
 - 参考 [翻译规范](https://github.com/Agda-zh/PLFA-zh/issues/1)
 - [术语表](https://docs.google.com/spreadsheets/d/1HL3E_eNF3rI6dy3k7_EpSOLo1eRkBDNIEPeyTg_Eu3s/edit?usp=sharing)
 
+## 特别注意
+
+- 技术术语
+  - 遇到未翻译过的技术数据，将其改成 `中文({tech}[英文])` 的格式 
+  - 翻译过程中遇到反向引用 如`{deftech}_xxx_` 时，需要全局搜索 `{tech}[xxx]` 将对应的引用也进行修改
+  - 如果要修改成中文的 `{tech}[xxx]` 所在文档未被翻译，则将其改成 `英文({tech}[中文])`
+- 以 `::::` 开始到 `::::` 结束的代码块是一个整体， 需要整体注释掉重新创建一个新的翻译过的版本
+
 ## 本地编译与环境安装
 **本参考手册只能在非windows环境下构建**
 1. latex, 参考[本地构建](#在本地构建参考手册)
-2. 安装  `pdftocairo`，在Debian系系统为`poppler-utils`包，在Homebrew中为`poppler`包
-3. 编译: `lake exe generate-manual --depth 2`
+2. 安装 gcc
+3. 安装  `pdftocairo`，在Debian系系统为`poppler-utils`包，在Homebrew中为`poppler`包
+4. 编译: `lake exe generate-manual --depth 2`
 生成的文档在`_out` 目录下
 
 **以下为原文档readme内容**
