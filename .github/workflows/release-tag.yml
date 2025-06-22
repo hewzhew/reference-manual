@@ -25,7 +25,9 @@ jobs:
         id: get_version
         run: |
           # Remove 'v' prefix from tag name
-          VERSION=${GITHUB_REF#refs/tags/v}
+          # VERSION=${GITHUB_REF#refs/tags/v}
+          # use Lean version instead of tag version
+          VERSION=$(lean --version | sed -E 's/^.*version[[:space:]]+([^,]+).*/\1/')
           echo "VERSION=$VERSION" >> $GITHUB_ENV
           echo "Version extracted: $VERSION"
 
