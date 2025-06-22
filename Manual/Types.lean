@@ -23,7 +23,7 @@ tag := "type-system"
 %%%
 
 {deftech}_Terms_, also known as {deftech}_expressions_, are the fundamental units of meaning in Lean's core language.
-They are produced from user-written syntax by the {tech}[elaborator].
+They are produced from user-written syntax by the elaborator({tech key := "elaborator"}[繁释器]).
 Lean's type system relates terms to their _types_, which are also themselves terms.
 Types can be thought of as denoting sets, while terms denote individual elements of these sets.
 A term is {deftech}_well-typed_ if it has a type under the rules of Lean's type theory.
